@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: mongo
+        app: webapp
     spec:
       containers:
       - name: webapp
