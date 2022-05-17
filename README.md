@@ -41,6 +41,27 @@ Display nodes:
 
 ```
 kubectl get node
+kubectl get pod 
+```
+#### Create config and secret file:
+
+```
+kubectl apply -f mongo-config.yaml # takes a file and creates whatever was configured inside
+```
+#### Intract with kubectl cluster
+
+```
+kubectl get all
+kubectl get configmap
+kubectl get secret
+kubectl --help # general help 
+kubectl get --help # Help of one option
+kubectl describe service webapp-service # details of the service
+
+kubectl logs [name of the pod] # check logs
+kubectl logs [name of the pod] -f # to stream the logs
+
+kubectl get node -o wide # Gives you the internal IP
 ```
 
 ## Project 
